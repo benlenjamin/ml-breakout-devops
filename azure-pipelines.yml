@@ -10,6 +10,8 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- task: UnitySetupTask@2
+
 - task: UnityBuildTask@3
   inputs:
     buildTarget: 'Web'
