@@ -10,9 +10,10 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-  - task: UnityBuildTask@3
-    inputs:
-      buildTarget: 'Web'
-      versionSelectionMode: 'project'
-      outputPath: '$(Build.BinariesDirectory)'
-      outputFileName: 'drop'
+- task: UnityBuildTask@3
+  inputs:
+    buildTarget: 'Web'
+    unityProjectPath: '$(System.DefaultWorkingDirectory)/'
+    versionSelectionMode: 'project'
+    outputPath: '$(Build.BinariesDirectory)'
+    outputFileName: 'drop'
