@@ -423,7 +423,7 @@ MonoBehaviour:
   gameCenterPosition: {x: 0, y: 0}
   gameWidth: 0
   paddleSize: 0
-  movementSpeed: 10
+  movementSpeed: 6
 --- !u!114 &1901952777253789674
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,4 +1,7 @@
+using System;
+using NUnit.Framework;
 using Unity.MLAgents.Integrations.Match3;
+using UnityEditor.UI;
 using UnityEngine;
 
 public class BallController : MonoBehaviour
@@ -10,6 +13,8 @@ public class BallController : MonoBehaviour
     public float initialSpeed = 5f;
     public float ballX;
     public float ballY;    
+
+    public float ignoreCollisionDuration = 0.5f; // Duration to ignore collisions
 
     // ***************************
     // * PUBLIC VARIABLES -> END *
@@ -25,6 +30,10 @@ public class BallController : MonoBehaviour
     [SerializeField] private AudioClip paddleCollisionClip;
     [SerializeField] private AudioClip brickCollisionClip;
     [SerializeField] private AudioClip wallCollisionClip;  
+
+    private float ignoreTimer = 0f;
+
+    private Collider2D otherCollider;
 
 
     // ****************************
@@ -48,7 +57,16 @@ public class BallController : MonoBehaviour
 
     void Update()
     {
-        // Keep the ball at constant speed
+        if (ignoreTimer > 0)
+        {
+            ignoreTimer -= Time.deltaTime;
+        }
+        else if (otherCollider != null && ignoreTimer <= 0) 
+        {
+            Physics2D.IgnoreCollision(GetComponent<Collider2D>(), otherCollider, false); // Re-enable collisions
+            otherCollider = null;
+        }
+        
         rb.linearVelocity = rb.linearVelocity.normalized * initialSpeed;
     }
 
@@ -69,10 +87,13 @@ public class BallController : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Paddle"))
         {
+            Debug.Log(transform.position);
+            Debug.Log(collision.transform.position);
             SoundFXManager.instance.PlaySoundFXClip(paddleCollisionClip, transform, 1f);
             // Calculate how far from the center of the paddle the ball hit
             float hitPoint = (transform.position.x - collision.transform.position.x) / collision.collider.bounds.size.x;
-
+            Debug.Log(hitPoint);
+            
             // Calculate new angle based on hit point
             float bounceAngle = hitPoint * 60f; // 60 degrees max angle
 
@@ -80,10 +101,15 @@ public class BallController : MonoBehaviour
             float angleInRadians = bounceAngle * Mathf.Deg2Rad;
             Vector2 direction = new Vector2(Mathf.Sin(angleInRadians), Mathf.Cos(angleInRadians));
             // Apply the new velocity
+            Debug.Log(direction.y);
             rb.linearVelocity = direction * initialSpeed;
 
             // Increment bounces
-            parent.GetComponent<GameManager>().IncrementBounces();   
+            parent.GetComponent<GameManager>().IncrementBounces(); 
+            Physics2D.IgnoreCollision(GetComponent<Collider2D>(), collision.collider, true);
+
+            otherCollider = collision.collider;
+            ignoreTimer = ignoreCollisionDuration;
         }
         // reducing paddle size by half *game feature*
         if (collision.gameObject.CompareTag("Top Wall") && !TopWallCollsion)
@@ -124,6 +150,9 @@ public class BallController : MonoBehaviour
                 }
             }
         }
+        // if(other.gameObject.CompareTag("Paddle")){
+        //     Debug.Log("test");
+        // }   
     }   
 
     public void IncreaseBallSpeed(float amount){
