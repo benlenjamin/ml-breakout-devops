@@ -1,3 +1,18 @@
+<h1>ML - Breakout</h1>
+
+## [YouTube Demonstration](https://www.youtube.com/watch?v=MwT9pnGHj7c)
+
+<h2>Description</h2>
+Project consists of numerous scripts that run a clone of classic arcade game, Atari Breakout, with the addition of Machine Learning AI Agents and a versus mode.  Project is run using Unity.
+<br />
+
+
+<h2>Languages and Utilities Used</h2>
+
+- <b>C#</b>
+- <b>Python</b>
+- <b>ML-Agents</b>
+
 ## Dev environment setup
 
 You'll need to install the mlagents python library:
