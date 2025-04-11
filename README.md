@@ -58,27 +58,25 @@ Title Screen: <br/>
 <img src="https://imgur.com/a/TKK7rFd" height="80%" width="80%" alt="ML-Breakout Title Screen"/>
 <br />
 <br />
-
 <p align="center">
 Main Menu: <br/>
 <img src="https://imgur.com/f1Y4FqW" height="80%" width="80%" alt="ML-Breakout Main Menu"/>
 <br />
 <br />
-
 <p align="center">
 Gameplay: <br/>
 <img src="https://imgur.com/Cw0kxzG" height="80%" width="80%" alt="ML-Breakout Gameplay"/>
 <br />
 <br />
-
 <p align="center">
 Pause Menu: <br/>
 <img src="https://imgur.com/FNEWwT8" height="80%" width="80%" alt="ML-Breakout Pause Menu"/>
 <br />
 <br />
-
 <p align="center">
 Volume Menu: <br/>
 <img src="https://imgur.com/FvKUX1B" height="80%" width="80%" alt="ML-Breakout Volume Menu"/>
 <br />
 <br />
+
+</p>
