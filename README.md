@@ -51,3 +51,34 @@ To test out your new model, the easiest way is:
 Here are some handy tips for solving common problems:
 
 * If the Unity editor crashes while you're trying to play a scene that includes an agent running in inference mode, check that the model you're using was trained using the same Vector Observation Stack Size as what's currently being used in your code. If there's a mismatch, that'll likely result in a crash (based on my experience)
+
+## Example Screenshots
+<p align="center">
+Title Screen: <br/>
+<img src="https://imgur.com/a/TKK7rFd" height="80%" width="80%" alt="ML-Breakout Title Screen"/>
+<br />
+<br />
+
+<p align="center">
+Main Menu: <br/>
+<img src="https://imgur.com/f1Y4FqW" height="80%" width="80%" alt="ML-Breakout Main Menu"/>
+<br />
+<br />
+
+<p align="center">
+Gameplay: <br/>
+<img src="https://imgur.com/Cw0kxzG" height="80%" width="80%" alt="ML-Breakout Gameplay"/>
+<br />
+<br />
+
+<p align="center">
+Pause Menu: <br/>
+<img src="https://imgur.com/FNEWwT8" height="80%" width="80%" alt="ML-Breakout Pause Menu"/>
+<br />
+<br />
+
+<p align="center">
+Volume Menu: <br/>
+<img src="https://imgur.com/FvKUX1B" height="80%" width="80%" alt="ML-Breakout Volume Menu"/>
+<br />
+<br />
