@@ -55,27 +55,27 @@ Here are some handy tips for solving common problems:
 ## Example Screenshots
 <p align="center">
 Title Screen: <br/>
-<img src="https://imgur.com/a/TKK7rFd" height="80%" width="80%" alt="ML-Breakout Title Screen"/>
+<img src="https://i.imgur.com/ysXYCLD.png" height="80%" width="80%" alt="ML-Breakout Title Screen"/>
 <br />
 <br />
 <p align="center">
 Main Menu: <br/>
-<img src="https://imgur.com/f1Y4FqW" height="80%" width="80%" alt="ML-Breakout Main Menu"/>
+<img src="https://i.imgur.com/f1Y4FqW.png" height="80%" width="80%" alt="ML-Breakout Main Menu"/>
 <br />
 <br />
 <p align="center">
 Gameplay: <br/>
-<img src="https://imgur.com/Cw0kxzG" height="80%" width="80%" alt="ML-Breakout Gameplay"/>
+<img src="https://i.imgur.com/Cw0kxzG.png" height="80%" width="80%" alt="ML-Breakout Gameplay"/>
 <br />
 <br />
 <p align="center">
 Pause Menu: <br/>
-<img src="https://imgur.com/FNEWwT8" height="80%" width="80%" alt="ML-Breakout Pause Menu"/>
+<img src="https://i.imgur.com/FNEWwT8.png" height="80%" width="80%" alt="ML-Breakout Pause Menu"/>
 <br />
 <br />
 <p align="center">
 Volume Menu: <br/>
-<img src="https://imgur.com/FvKUX1B" height="80%" width="80%" alt="ML-Breakout Volume Menu"/>
+<img src="https://i.imgur.com/FvKUX1B.png" height="80%" width="80%" alt="ML-Breakout Volume Menu"/>
 <br />
 <br />
 
