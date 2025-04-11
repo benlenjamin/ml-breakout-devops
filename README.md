@@ -13,6 +13,35 @@ Project consists of numerous scripts that run a clone of classic arcade game, At
 - <b>Python</b>
 - <b>ML-Agents</b>
 
+## Example Screenshots
+<p align="center">
+Title Screen: <br/>
+<img src="https://i.imgur.com/ysXYCLD.png" height="80%" width="80%" alt="ML-Breakout Title Screen"/>
+<br />
+<br />
+<p align="center">
+Main Menu: <br/>
+<img src="https://i.imgur.com/f1Y4FqW.png" height="80%" width="80%" alt="ML-Breakout Main Menu"/>
+<br />
+<br />
+<p align="center">
+Gameplay: <br/>
+<img src="https://i.imgur.com/Cw0kxzG.png" height="80%" width="80%" alt="ML-Breakout Gameplay"/>
+<br />
+<br />
+<p align="center">
+Pause Menu: <br/>
+<img src="https://i.imgur.com/FNEWwT8.png" height="80%" width="80%" alt="ML-Breakout Pause Menu"/>
+<br />
+<br />
+<p align="center">
+Volume Menu: <br/>
+<img src="https://i.imgur.com/FvKUX1B.png" height="80%" width="80%" alt="ML-Breakout Volume Menu"/>
+<br />
+<br />
+
+</p>
+
 ## Dev environment setup
 
 You'll need to install the mlagents python library:
@@ -66,32 +95,3 @@ To test out your new model, the easiest way is:
 Here are some handy tips for solving common problems:
 
 * If the Unity editor crashes while you're trying to play a scene that includes an agent running in inference mode, check that the model you're using was trained using the same Vector Observation Stack Size as what's currently being used in your code. If there's a mismatch, that'll likely result in a crash (based on my experience)
-
-## Example Screenshots
-<p align="center">
-Title Screen: <br/>
-<img src="https://i.imgur.com/ysXYCLD.png" height="80%" width="80%" alt="ML-Breakout Title Screen"/>
-<br />
-<br />
-<p align="center">
-Main Menu: <br/>
-<img src="https://i.imgur.com/f1Y4FqW.png" height="80%" width="80%" alt="ML-Breakout Main Menu"/>
-<br />
-<br />
-<p align="center">
-Gameplay: <br/>
-<img src="https://i.imgur.com/Cw0kxzG.png" height="80%" width="80%" alt="ML-Breakout Gameplay"/>
-<br />
-<br />
-<p align="center">
-Pause Menu: <br/>
-<img src="https://i.imgur.com/FNEWwT8.png" height="80%" width="80%" alt="ML-Breakout Pause Menu"/>
-<br />
-<br />
-<p align="center">
-Volume Menu: <br/>
-<img src="https://i.imgur.com/FvKUX1B.png" height="80%" width="80%" alt="ML-Breakout Volume Menu"/>
-<br />
-<br />
-
-</p>
